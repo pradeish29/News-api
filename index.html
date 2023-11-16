@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planet</title>
+    <!-- Box-icon   6742567565c844ecab999d2b4616f8e1 -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">Daily <span>Planet</span></a>
+            <a href="#" class="login">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title heading">Daily Planet</h2><br><br>
+            <span class="home-subtitle">Your source of great news and content</span>
+        </div>
+    </section>
+
+    <section class="about " id="about">
+        <div class="contentBx">
+            <h2 class="titleText">Catch up with the trending topics</h2>
+            <p class="title-text">
+                Welcome to <span>Daily Planet</span>, your trusted source for unbiased, open-source news. We are a dedicated team of passionate individuals committed to providing the world with reliable and factual information,
+                 free from any bias or hidden agendas. Our mission is to empower readers with the knowledge they need to make informed decisions and stay informed about the latest global events. Daily Planet is a non-profit initiative,
+                  made possible by our community of contributors and supporters. Join us in the pursuit of transparent, open-access journalism for all.
+            </p>
+           <br>
+           <div class="searchdiv">
+            <input type="text"id="search" class="search" placeholder="Search" > 
+            <button><i class="fa-solid fa-search button" id="search-button"></i></button>
+            
+        </div>
+        </div>
+    </section>
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all" id="general" onclick="onNavItemClick('general')">General</span>
+        <span class="filter-item" data-filter="tech" id="tech"  onclick="onNavItemClick('politics')">Politics</span>
+        <span class="filter-item" data-filter="tech" id="tech"  onclick="onNavItemClick('india')">India</span>
+        <span class="filter-item" data-filter="business" id="business"  onclick="onNavItemClick('business')">Business</span>
+        <span class="filter-item" data-filter="business" id="business"  onclick="onNavItemClick('cinema')">Cinema</span>
+        <span class="filter-item" data-filter="tech" id="tech"  onclick="onNavItemClick('technology')">Tech</span>
+        <span class="filter-item" data-filter="entertainment" id="entertainment"  onclick="onNavItemClick('gaming')">Gaming</span>
+        <span class="filter-item" data-filter="sports" id="sports"  onclick="onNavItemClick('sports')">Sports</span>
+    </div>
+    <br>
+
+    <main>
+        <div class="cards-container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+            <div class="post-box">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+        </div>
+    </template>
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>"We are a community-driven, open-source news platform committed to delivering unbiased, transparent information to empower and inform global citizens"</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about">About</a></li>
+                </ul>
+            </div>
+            <div class="sec contactBx">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class='bx bxs-map'></i></span>
+                        <span>2099 Miguel Street <br> Manchester PA 33445 <br> UK</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-envelope' ></i></span>
+                        <p><a href="mail to: dailyplanet@gmail.com">bloggersdigest@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
